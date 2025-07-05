@@ -33,7 +33,10 @@
 ![image](https://github.com/user-attachments/assets/d2da8d8a-a4bb-44f5-b801-9743bd5bd436)
 
 如上图为枪眼一体安装方案，即摄像头跟随枪移动，PID的误差取图中右侧的计算方式，但经过测试效果很差。
-![image](https://github.com/user-attachments/assets/f865ea69-fcda-4d3f-b499-cae7c108aaae)
+如果为了追求PID控制的响应速度，就会出现响应快但抖动严重的问题，如果采用相对保守的PID参数，就会出现控制虽然很稳定，但是恢复速度非常慢。
+其实深究原因，主要是因为舵机本身很难做到高精度的丝滑控制，其次就是跟踪射击会给摄像头带来大幅度的抖动
+![image](https://github.com/user-attachments/assets/41e08b68-8437-4806-8bf1-d8ea34e11e45)
+
 
 
 ### 机体控制逻辑
