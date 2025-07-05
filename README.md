@@ -41,6 +41,13 @@
 为了方便使用，写了一个本地的采集数据点的测试程序，
 ![image](https://github.com/user-attachments/assets/e8d8e98b-1c4d-434a-af4d-d6c0f86213b8)
 操作方式很简单，通过WASD键可以控制云台上下左右移动，按F键可以进行射击，按数字123可以调节舵机的移动精度，按J进行保存，按ESC退出页面，如果不按J则不更新此次新标记的点。
+![image](https://github.com/user-attachments/assets/bed7a70d-e4d6-4fb8-a7fb-80a061aa7f56)
+在使用的过程中，鼠标直接点击枪头的红色激光头显示在图像中的位置即可进行标记，非常简单。标记成功后，进行随机移动，再次点击新的红色激光点位即可，当然也可以直接按F键进行模拟射击。
+![image](https://github.com/user-attachments/assets/9a964859-b521-45fe-b1f3-7713d83047bc)
+当按J保存后，会显示预标记数据点所在文件以及保存数量。
+![image](https://github.com/user-attachments/assets/6e013be6-6e3c-4b3f-8b94-f178a411cba1)
+
+
 
 
 
