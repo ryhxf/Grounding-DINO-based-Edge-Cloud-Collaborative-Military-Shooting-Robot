@@ -27,10 +27,14 @@
 这个模型的内在核心原理，我就不仔细介绍了，毕竟在这个项目里只需要把它当成一个模块，做到怎么用，怎么调参就行了。
 ![image](https://github.com/user-attachments/assets/5861fbe8-f05f-4f18-9a93-9a7ccb89e6bd)
 
-它的使用方法就是
-
-
+如上图，将文本关键词白色丝袜和对应图像输入Grounding DINO检测模型，最后直接会输出检测信息，包括检测框的大小、位置、置信度等参数。
 ### 自适应像素-角度数学映射模型
+在使用该模型前，已经实验过PID方案。
+![image](https://github.com/user-attachments/assets/d2da8d8a-a4bb-44f5-b801-9743bd5bd436)
+
+如上图为枪眼一体安装方案，即摄像头跟随枪移动，PID的误差取图中右侧的计算方式，但经过测试效果很差。
+![image](https://github.com/user-attachments/assets/f865ea69-fcda-4d3f-b499-cae7c108aaae)
+
 
 ### 机体控制逻辑
 
