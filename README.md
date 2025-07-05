@@ -38,7 +38,9 @@
 ![image](https://github.com/user-attachments/assets/a534e09d-54c4-4aa0-ac75-d5bb1b811a6d)
 上图为安装的位置，使用的自适应像素-角度数学映射模型其实只是对舵机角度和像素点位置构建了数学映射关系，即当前需要射击的点位在图像中位置对应固定的舵机角度，在实际中当然不能使用穷举的方法进行数据记录，也需要提前设定几个参照点进行映射模型构建，具体使用了RBF插值模型，原理不进行详细赘述。
 ![image](https://github.com/user-attachments/assets/226d69b4-ca0a-4c85-aa32-7901387a4d16)
-为了方便使用，写了一个本地的采集数据点的程序，
+为了方便使用，写了一个本地的采集数据点的测试程序，
+![image](https://github.com/user-attachments/assets/e8d8e98b-1c4d-434a-af4d-d6c0f86213b8)
+操作方式很简单，通过WASD键可以控制云台上下左右移动，按F键可以进行射击，按数字123可以调节舵机的移动精度，按J进行保存，按ESC退出页面，如果不按J则不更新此次新标记的点。
 
 
 
