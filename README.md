@@ -1,1 +1,1 @@
-# 基于Grounding DINO的端云协同军事射击机器人
+# 基于Grounding DINO的端云协同射击机器蛛
