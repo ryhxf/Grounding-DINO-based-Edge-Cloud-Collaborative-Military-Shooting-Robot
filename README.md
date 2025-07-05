@@ -1,3 +1,23 @@
 ![image](https://github.com/user-attachments/assets/8b41e2f9-01ab-4583-a4a4-10756008a795)# 云影猎蛛者-基于Grounding DINO的端云协同射击六足机器人
+## 设计初衷
+
 ## 功能介绍
+
+## 整体方案设计
+三端协同设计
+### Grounding DINO模型介绍
+
+### 自适应像素-角度数学映射模型
+
+### 机体控制逻辑
+
+### 网络设计
+
+### 网页界面设计
+
+### 硬件设计
+
+## 实验效果
+
+## 代码结构
 ![Uploading image.png…]()
