@@ -148,7 +148,8 @@ http
 
 ## 环境安装与源码
 服务器端主要基于Grounding DINO工程进行开发，当时安装学习来源于别人做的B站教程
-【Grounding_dino快速安装部署【教程】】 https://www.bilibili.com/video/BV1dU1BYXEgj/?share_source=copy_web&vd_source=e6717e87e329b2362c9d525783220529
+[https://www.bilibili.com/video/BV1dU1BYXEgj/?share_source=copy_web&vd_source=e6717e87e329b2362c9d525783220529]
+
 和CSDN博客
 [https://blog.csdn.net/weixin_44362044/article/details/136136728?ops_request_misc=elastic_search_misc&request_id=9ff952fe760454087ed4516a62fb9d0c&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-136136728-null-null.142^v102^pc_search_result_base9&utm_term=grounding%20dino&spm=1018.2226.3001.4187]
 
@@ -156,19 +157,29 @@ Grounding DINO源码工程
 https://github.com/IDEA-Research/GroundingDINO
 
 服务器端工程在conda虚拟环境中运行，安装Grounding DINO成功后，还需要安装一些其他的库，但是环境太多了，这里我给出一些比较必要的库，如果还有缺失麻烦自行补足，我把我的环境库放在server_requirement.txt里面了（用于备用对照参考）
+
 ```python==3.8.19```
+
 ```opencv-python==4.10.0.84```
+
 ```Flask==3.0.3```
+
 ```Flask-SocketIO==5.5.1```
+
 ```torch==2.0.1```
+
 ```torchvision==0.15.2```
+
 ```torchaudio==2.0.2```
 
 客户端的RDK-X5基于Ubuntu22.04系统开发
 以下是一些补充安装指令，可能不全，请麻烦自行补足，后续会慢慢补充。
 ```pip install opencv-python```
+
 ```pip install numpy```
+
 ```pip install pyserial```
+
 ```pip install pillow```
 
 ## 代码结构
