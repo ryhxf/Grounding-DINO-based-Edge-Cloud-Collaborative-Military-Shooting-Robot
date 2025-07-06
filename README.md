@@ -146,6 +146,31 @@ https://oshwhub.com/pursue.c/two-dimensional-shooting-ptz-mai
 见B站视频
 http
 
+## 环境安装与源码
+服务器端主要基于Grounding DINO工程进行开发，当时安装学习来源于别人做的B站教程
+【Grounding_dino快速安装部署【教程】】 https://www.bilibili.com/video/BV1dU1BYXEgj/?share_source=copy_web&vd_source=e6717e87e329b2362c9d525783220529
+和CSDN博客
+[https://blog.csdn.net/weixin_44362044/article/details/136136728?ops_request_misc=elastic_search_misc&request_id=9ff952fe760454087ed4516a62fb9d0c&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-136136728-null-null.142^v102^pc_search_result_base9&utm_term=grounding%20dino&spm=1018.2226.3001.4187]
+
+服务器端工程在conda虚拟环境中运行，安装Grounding DINO成功后，给出一些其他需要安装的库指令
+```pip install opencv-python```
+
+
 ## 代码结构
+
+
+
+服务器的工程文件是直接在Grounding DINO的工程基础上进行开发，因此主要详细展示增加的开发部分，其余部分有很多废案并未删除。
+
+
+服务器端
+└── GroundingDINO
+   └── origincar
+       ├── 3rdparty
+       ├── origincar_base
+       ├── origincar_bringup
+       ├── origincar_description
+       └── origincar_msg
+
 
 ## 代码使用配置指令
