@@ -131,8 +131,9 @@ https://console.sdwan.oray.com/zh/main
 
 ![image](https://github.com/user-attachments/assets/6410a4e1-d874-4ee0-bd53-d985709ca0f3)
 
-GD32主控板开源在立创开源广场
-https://oshwhub.com/pursue.c/two-dimensional-shooting-ptz-mai
+GD32主控板开源在立创开源广场，网站如下：
+
+[https://oshwhub.com/pursue.c/two-dimensional-shooting-ptz-mai]
 
 ![image](https://github.com/user-attachments/assets/719ae806-6c3e-4ee9-a7b1-3b2ed879cd37)
 
