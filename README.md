@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b776679b-99bd-45d0-bbf4-28f6d7a7a08b)# 基于多模态融合的端云协同军事射击机器人
+# 基于多模态融合的端云协同军事射击机器人
 
 ![image](https://github.com/user-attachments/assets/90377063-cfa7-491c-842c-ccc0a36b71c6)
 
@@ -32,6 +32,7 @@
 ![image](https://github.com/user-attachments/assets/5861fbe8-f05f-4f18-9a93-9a7ccb89e6bd)
 
 如上图，将文本关键词白色丝袜和对应图像输入Grounding DINO检测模型，最后直接会输出检测信息，包括检测框的大小、位置、置信度等参数。
+不过，该模型的输入文本关键词固定为英文，为了因此代码中还部署了自动检测中英文和离线翻译模型，使用时输入中文时，会自动翻译成英文输入模型。
 
 ### 端云协同机制下“大检测-小检测-跟踪”三级级联框架
 
@@ -90,15 +91,60 @@
 由于调试过程中有点BUG，现版本该部分功能先隐去。
 
 ### 网络设计
-考虑到机器人在外执行任务时（自带网卡），需要和服务器构建通信网络，因此需要穿透内网，我们采用的是市面上较成熟的贝瑞蒲公英平台
+考虑到机器人在外执行任务时（自带网卡），需要和服务器构建通信网络，因此需要穿透内网，我们采用的是市面上较成熟的贝瑞蒲公英平台:
+https://console.sdwan.oray.com/zh/main
+该平台可以在不同设备之间构建局域网，实现端口映射和异地组网，注册账号后，有3个设备的免费额度，有2M的免费带宽可使用
+
+![image](https://github.com/user-attachments/assets/efd6d519-fa96-4376-8ede-49fcd398c29b)
+
+在网络成员中构建3个账号，分别对应三个设备，服务器端、嵌入式端、电脑操作端。使用前，需要在这三个设备上都安装贝瑞蒲公英客户端（注意不要下载服务器端），嵌入式端对应Linux的arm版本，电脑操作端对应Windows版本，服务器端对应Linux的X86版本。3个账号有对应的UID：XXXXXX：001/002/003，分别用于三台设备的账号登录。
+还需要获取每个账号的虚拟IP（本人是172.16.X.XXX），在服务器端和嵌入式端对应的代码中需要修改为对应发送的网络IP地址。
+
+![image](https://github.com/user-attachments/assets/a6bfa434-cf23-445a-99e5-9b45ee9e3f03)
+
+电脑操作端主要是用户用于远程操控，只负责下发指令和观测状态，对带宽占用和实时性要求不高。
+但是服务器端和嵌入式端需要进行大量的图像信息传输，需要保证实时性，因此需要特殊对待。
+
 ![image](https://github.com/user-attachments/assets/17609558-aff5-429e-98f5-1560fb2c8623)
 
+如上图，为保证实时传输的低延迟，选用了速度更快、延迟更低的UDP网络传输协议，在传输过程中，加入图像压缩和解码，减少网络带宽压力。
 
 ### 网页界面设计
+这是整个网页端界面设计
+
+![image](https://github.com/user-attachments/assets/4684bc9f-472e-48f9-9822-f321c75432d1)
+
+这是实时检测视频流
+
+![image](https://github.com/user-attachments/assets/95ead5fc-310c-43fa-9b5a-c4fe9c23f5c5)
+
+这是射击控制面板和控制面板，射击控制面板可以进行多目标射击和单目标射击（顺序全目标射击或指定目标），用于下达指令，控制面板用于设置检测的任意关键词，如人、红色灭火器、大树等等。
+
+![image](https://github.com/user-attachments/assets/5d71a8b1-0c89-4dac-b8a7-9aa16a7a4d90)
+
+还有实时帧率监控，可以观测最后跟踪的帧率和大模型的检测帧率与处理时间。
+![image](https://github.com/user-attachments/assets/c54b5b3d-129a-4624-b698-a53a143398e1)
+
 
 ### 硬件设计
+一开始构思的机械建模图
+
+![image](https://github.com/user-attachments/assets/6410a4e1-d874-4ee0-bd53-d985709ca0f3)
+
+GD32主控板开源在立创开源广场
+https://oshwhub.com/pursue.c/two-dimensional-shooting-ptz-mai
+
+![image](https://github.com/user-attachments/assets/719ae806-6c3e-4ee9-a7b1-3b2ed879cd37)
+![image](https://github.com/user-attachments/assets/21255b7a-a224-4b91-865a-80ff97d9a317)
+
+整体实物图
+
+![image](https://github.com/user-attachments/assets/532cf04b-8060-4acd-949f-c5a87ac9d2bd)
 
 ## 实验效果
+
+见B站视频
+http
 
 ## 代码结构
 
