@@ -1,3 +1,5 @@
+**其他语言版本: [English](README.md), [中文](README_zh.md).**
+
 # 基于多模态融合的端云协同军事射击机器人
 
 ![image](https://github.com/user-attachments/assets/90377063-cfa7-491c-842c-ccc0a36b71c6)
