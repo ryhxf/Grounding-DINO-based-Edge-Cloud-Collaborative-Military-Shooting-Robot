@@ -1,5 +1,7 @@
 **其他语言版本: [English](README.md), [中文](README_cn.md).**
 
+代码都放在
+[release]([链接地址](https://github.com/ryhxf/Grounding-DINO-based-device-cloud-collaborative-shooting-robot-spider/releases/tag/v1.0))
 # 基于多模态融合的端云协同军事射击机器人
 
 ![image](https://github.com/user-attachments/assets/90377063-cfa7-491c-842c-ccc0a36b71c6)
