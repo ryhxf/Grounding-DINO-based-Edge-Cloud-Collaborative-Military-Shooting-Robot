@@ -1,6 +1,6 @@
 **Read this in other languages: [English](README.md), [中文](README_cn.md).**
 
-The code is all placed here[release](https://github.com/ryhxf/Grounding-DINO-based-device-cloud-collaborative-shooting-robot-spider/releases/tag/v1.0)
+The code is all placed here [release](https://github.com/ryhxf/Grounding-DINO-based-device-cloud-collaborative-shooting-robot-spider/releases/tag/v1.0)
 
 # End-cloud collaborative military shooting robot based on multi-modal fusion
 
