@@ -77,7 +77,7 @@ Build 3 accounts among the network members, one for each device, the server, the
 
 The computer operation end is mainly controlled by the user remotely, and is only responsible for issuing instructions and starting the status, and does not require high bandwidth usage and real-time performance. However, the server and embedded end need to transmit a large amount of image information, and real-time performance must be guaranteed, which requires special treatment.
 
-![image](https://github.com/user-attachments/assets/17609558-aff5-429e-98f5-1560fb2c8623)
+![image](https://github.com/user-attachments/assets/63f00478-23dc-4d90-b9ee-f81494b7e0dc)
 
 As shown in the figure above, in order to ensure low latency in real-time transmission, the UDP network transmission protocol with faster speed and higher latency is adopted. During the transmission process, image compression and decoding are added to reduce the pressure on network bandwidth.
 
