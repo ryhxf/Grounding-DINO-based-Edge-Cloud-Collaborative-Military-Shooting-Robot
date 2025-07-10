@@ -109,7 +109,7 @@ https://console.sdwan.oray.com/zh/main
 电脑操作端主要是用户用于远程操控，只负责下发指令和观测状态，对带宽占用和实时性要求不高。
 但是服务器端和嵌入式端需要进行大量的图像信息传输，需要保证实时性，因此需要特殊对待。
 
-![image](https://github.com/user-attachments/assets/17609558-aff5-429e-98f5-1560fb2c8623)
+![image](https://github.com/user-attachments/assets/576544c5-7a9f-433d-8913-c5c0efa04b58)
 
 如上图，为保证实时传输的低延迟，选用了速度更快、延迟更低的UDP网络传输协议，在传输过程中，加入图像压缩和解码，减少网络带宽压力。
 
